@@ -1,0 +1,22 @@
+{
+  "name": "jba-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "app": "cd app && npm start",
+    "server": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run app\""
+  },
+  "author": "Jason Schreiber",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "nodemon": "^2.0.4",
+    "sqlite3": "^5.0.0"
+  }
+}
